@@ -155,7 +155,10 @@ def os_multithread(**kwargs):
     kwargs: list of dictionaries, where each key-value pair is the
     usage name and tuple of function name and function arguments,
     Example:
-        [name1=(func1, (1,2,)), name2=(func2, (2,3,))]
+        os_multithread(function1=(function_name1, (arg1, arg2, ...)),
+                       function2=(function_name2, (arg1,)),
+                       function3=(function_name3, (,)),
+                       ...)
 
     Returns list of return values from the functions passed
     -------
